@@ -41,3 +41,7 @@ docker cp sqlinjection:/app.jar /xxxx
 - jdbc中常见的sql注入点
 - mybatis中常见sql注入点
 
+## 0x02 持续更新
+
+敬请期待
+
