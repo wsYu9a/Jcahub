@@ -1,4 +1,4 @@
-# Jcahub
+# Jcahub: java代码审计靶场
 
 <img src="https://socialify.git.ci/wsYu9a/Jcahub/image?font=Inter&language=1&name=1&owner=1&pattern=Floating%20Cogs&theme=Dark" alt="Jcahub" width="100%" height="320" /> 
 
@@ -10,29 +10,35 @@
 
 以sql注入漏洞模块sqlInjection为例：
 
-1、通过`wsyu9a/模块名:版本`拉取漏洞镜像
+1、下载Jcahub
 
 ```
-docker pull wsyu9a/sqlinjection:v1.0
+git clone https://github.com/wsYu9a/Jcahub.git
 ```
 
-2、运行容器
+2、选择漏洞模块
 
 ```
-docker run -itd -p 8080:8080 --name sqlinjection wsyu9a/sqlinjection:v1.0
+cd Jcahub/sqlInjection
 ```
 
-3、拷贝出容器内jar包
+3、启动漏洞环境
+
+```
+docker-compose up -d
+```
+
+4、拷贝出容器内jar包
 
 ```
 docker cp sqlinjection:/app.jar /xxxx
 ```
 
-4、反编译
+5、反编译
 
 可以使用idea、jadx等工具
 
-5、代码审计
+6、代码审计
 
 ## 目前支持
 
@@ -41,7 +47,7 @@ docker cp sqlinjection:/app.jar /xxxx
 - jdbc中常见的sql注入点
 - mybatis中常见sql注入点
 
-## 0x02 持续更新
+### 0x02 持续更新
 
 敬请期待
 
