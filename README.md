@@ -44,10 +44,11 @@ docker cp sqlinjection:/app.jar /xxxx
 
 ### 0x01 sqlInjection(sql注入)
 
-- jdbc中常见的sql注入点
-- mybatis中常见sql注入点
+`jdbc`、`mybatis`中常见的sql注入点，如：like、order by
 
-### 0x02 持续更新
+### 0x02 privilege_escalation(权限绕过)
 
-敬请期待
+常见权限绕过，如：`../` 、`;` 、`url编码` 、`Spring MVC中追加/`
+
+### 0x03 敬请期待
 
