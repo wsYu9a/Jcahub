@@ -50,8 +50,16 @@ jdbc、mybatis中常见的sql注入点，如：`like`、`order by`
 
 常见权限绕过，如：`../` 、`;` 、`url编码` 、`Spring MVC中追加/`
 
-### 0x03 ssrf（服务端请求伪造）
+### 0x03 ssrf(服务端请求伪造)
 
 常见发起http请求的类，如：`urlConnection`、`HttpURLConnection`、`ImageIO`、`restTemplate`
 
-### 0x04 敬请期待
+### 0x04 rce(命令执行)
+
+包含一下三种场景：
+
+- Java中常见执行命令的方法：`Runtime#exec()`、`ProcessBuilder#start()`、`ProcessImpl#start()`
+- 若依计划任务简化（通过反射调用本地方法）
+- cc1中`transform`方法引起的rce（本质还是反射）
+
+### 0x05 敬请期待

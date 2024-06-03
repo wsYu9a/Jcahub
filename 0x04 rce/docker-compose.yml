@@ -1,0 +1,6 @@
+version: '3'
+services:
+ web:
+   image: wsyu9a/rce:v1.0
+   ports:
+    - "8080:8080"
